@@ -232,7 +232,7 @@ export default function DestinationDetail() {
                 </div>
               </div>
 
-              <div className="border-t border-stone-100 dark:border-stone-700 pt-4 space-y-3">
+              {/* <div className="border-t border-stone-100 dark:border-stone-700 pt-4 space-y-3">
                 <h4 className="label-sm">Quick Facts</h4>
                 {destination.quickFacts.map((fact) => (
                   <div
@@ -247,7 +247,7 @@ export default function DestinationDetail() {
                     </span>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             {/* CTA buttons */}
