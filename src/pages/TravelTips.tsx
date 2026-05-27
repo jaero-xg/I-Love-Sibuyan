@@ -180,7 +180,7 @@ export default function TravelTips() {
           viewport={{ once: true }}
         >
           <img
-            src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&h=500&q=80"
+            src="https://delightgarrovillo.com/wp-content/uploads/2025/10/img_8059.jpg"
             alt="Travel"
             className="w-full h-full object-cover"
           />
