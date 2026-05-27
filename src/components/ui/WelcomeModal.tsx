@@ -44,7 +44,7 @@ export default function WelcomeModal() {
             {/* Top image strip */}
             <div className="h-40 relative overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&h=400&q=80"
+                src="https://delightgarrovillo.com/wp-content/uploads/2025/10/img_8059.jpg"
                 alt="Travel"
                 className="w-full h-full object-cover"
               />
