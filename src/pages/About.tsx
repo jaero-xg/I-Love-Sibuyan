@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Compass, Heart, Globe, Sparkles } from "lucide-react";
+import { Compass, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function About() {
@@ -24,8 +24,8 @@ export default function About() {
           </h1>
           <p className="text-stone-500 dark:text-stone-400 text-lg max-w-2xl mx-auto">
             I Love Sibuyan was created to inspire curious minds to explore the
-            world — discovering hidden gems, iconic landmarks, and the stories
-            that make every destination unique.
+            Island of Sibuyan — discovering hidden gems, iconic landmarks, and
+            the stories that make every destination unique.
           </p>
         </motion.div>
 
@@ -35,22 +35,12 @@ export default function About() {
             {
               icon: Compass,
               title: "Curated Discovery",
-              text: "Every destination is carefully selected to offer genuine inspiration — from famous classics to hidden corners of the world.",
+              text: "Every destination is carefully selected to offer genuine inspiration — from famous classics to hidden corners of Sibuyan.",
             },
             {
               icon: Heart,
               title: "Personal Journey",
               text: "Your travel story is yours alone. Save favorites, build bucket lists, and track your adventures without signing up.",
-            },
-            {
-              icon: Globe,
-              title: "Global Perspective",
-              text: "We celebrate the diversity of our world — cultures, landscapes, cuisines, and experiences across all continents.",
-            },
-            {
-              icon: Sparkles,
-              title: "Premium Experience",
-              text: "Every visual, animation, and interaction is crafted with care to create a truly luxurious browsing experience.",
             },
           ].map((v, i) => (
             <motion.div
