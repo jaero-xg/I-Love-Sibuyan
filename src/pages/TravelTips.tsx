@@ -8,7 +8,6 @@ import {
   Globe,
   Heart,
   Clock,
-  Map,
 } from "lucide-react";
 
 const tips = [
@@ -17,10 +16,11 @@ const tips = [
     title: "Travel Insurance",
     color: "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400",
     tips: [
-      "Always purchase comprehensive travel insurance before your trip",
-      "Ensure medical coverage includes evacuation and repatriation",
-      "Keep all policy documents saved offline and in cloud storage",
-      "Document your belongings with photos before departure",
+      "Secure reliable travel insurance before visiting the island",
+      "Choose coverage that includes medical emergencies and transportation assistance",
+      "Keep digital and printed copies of important travel and insurance documentse",
+      "Save emergency contact numbers for quick access during your trip",
+      "Review weather and travel advisories before departure",
     ],
   },
   {
@@ -29,10 +29,11 @@ const tips = [
     color:
       "bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400",
     tips: [
-      "Always carry a mix of local currency and cards",
-      "Notify your bank before traveling internationally",
-      "Use a no-foreign-transaction-fee card when possible",
-      "Keep emergency cash in a separate location from your wallet",
+      "Carry enough local currency for transportation, small stores, and remote areas",
+      "Keep your cash, cards, and important valuables secured while traveling",
+      "Set a realistic travel budget for food, accommodation, and activities",
+      "Prepare emergency funds for unexpected expenses during your trip",
+      "Use trusted payment methods and avoid displaying large amounts of cash in public",
     ],
   },
   {
@@ -41,10 +42,11 @@ const tips = [
     color:
       "bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400",
     tips: [
-      "Roll clothes instead of folding to save space and reduce wrinkles",
-      "Pack a universal power adapter for international trips",
-      "Bring a reusable water bottle to stay hydrated and reduce waste",
-      "Keep medications and valuables in carry-on luggage",
+      "Pack light and bring only essential travel items for a more comfortable journey",
+      "Wear comfortable clothing suitable for island weather and outdoor activities",
+      "Bring reusable water bottles, personal hygiene kits, and eco-friendly essentials",
+      "Keep important items such as gadgets, medications, and documents secured at all times",
+      "Prepare waterproof bags or cases to protect valuables during beach or river activities",
     ],
   },
   {
@@ -53,10 +55,11 @@ const tips = [
     color:
       "bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400",
     tips: [
-      "Download offline maps for your destination before departing",
-      "Get a local SIM card or international data plan",
-      "Back up all important documents to cloud storage",
-      "Carry a portable charger for long days of exploration",
+      "Download offline maps and important travel information before exploring remote areas",
+      "Bring a fully charged power bank for long trips and outdoor activities",
+      "Keep your devices protected from water, heat, and unexpected weather conditions",
+      "Save emergency contacts and accommodation details on your phone for easy access",
+      "Ensure stable communication by preparing mobile data, local SIM access, or offline alternatives",
     ],
   },
   {
@@ -64,10 +67,11 @@ const tips = [
     title: "Cultural Respect",
     color: "bg-rose-50 dark:bg-rose-900/20 text-rose-600 dark:text-rose-400",
     tips: [
-      "Research local customs and dress codes before visiting",
-      "Learn a few basic phrases in the local language",
-      "Ask permission before photographing people or religious sites",
-      "Support local businesses and artisans over international chains",
+      "Respect local traditions, communities, and cultural practices while visiting destinations",
+      "Help preserve natural and historical sites by following local guidelines and regulations",
+      "Practice responsible tourism by keeping surroundings clean and minimizing environmental impact",
+      "Support local businesses, guides, and artisans to contribute to the community’s livelihood",
+      "Show courtesy and kindness to residents and fellow travelers throughout your journey",
     ],
   },
   {
@@ -75,10 +79,11 @@ const tips = [
     title: "Health & Safety",
     color: "bg-teal-50 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400",
     tips: [
-      "Check required vaccinations and health advisories",
-      "Carry a basic first-aid kit and any prescription medications",
-      "Stay hydrated and be cautious about food and water safety",
-      "Register with your country's embassy for extended stays",
+      "Prioritize your safety by staying aware of weather conditions and travel advisories",
+      "Bring essential medications, personal health supplies, and emergency necessities",
+      "Stay hydrated, wear proper protection from the sun, and take breaks during outdoor activities",
+      "Follow local safety guidelines when visiting beaches, rivers, mountains, and remote areas",
+      "Keep emergency contacts and important medical information easily accessible during your trip",
     ],
   },
   {
@@ -87,21 +92,11 @@ const tips = [
     color:
       "bg-orange-50 dark:bg-orange-900/20 text-orange-600 dark:text-orange-400",
     tips: [
-      "Book popular attractions in advance to avoid disappointment",
-      "Visit major sites early morning to avoid crowds",
-      "Allow buffer time between connecting flights and tours",
-      "Check for local holidays that may affect schedules",
-    ],
-  },
-  {
-    icon: Map,
-    title: "Getting Around",
-    color: "bg-sky-50 dark:bg-sky-900/20 text-sky-600 dark:text-sky-400",
-    tips: [
-      "Research your transportation options ahead of time",
-      "Book airport transfers in advance for peace of mind",
-      "Consider renting a car for flexible rural exploration",
-      "Use reputable taxi apps or hotel-arranged transport",
+      "Plan your itinerary ahead to make the most of your travel experience",
+      "Allow extra time for transportation, weather changes, and unexpected delays",
+      "Visit popular attractions early in the day for a more relaxed and enjoyable trip",
+      "Check local schedules, tourism guidelines, and seasonal conditions before traveling",
+      "Balance activities with enough rest time to enjoy your journey comfortably",
     ],
   },
 ];
