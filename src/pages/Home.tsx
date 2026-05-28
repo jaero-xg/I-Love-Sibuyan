@@ -121,7 +121,7 @@ export default function Home() {
         </motion.div>
 
         {/* Scroll indicator */}
-        <motion.div
+        {/* <motion.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 flex flex-col items-center gap-1"
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
@@ -130,7 +130,7 @@ export default function Home() {
             Scroll
           </span>
           <ChevronDown className="w-4 h-4" />
-        </motion.div>
+        </motion.div> */}
 
         {/* Stats bar */}
         <motion.div

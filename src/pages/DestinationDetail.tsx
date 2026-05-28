@@ -204,7 +204,7 @@ export default function DestinationDetail() {
               <h3 className="font-display text-lg font-semibold text-stone-900 dark:text-white">
                 Overview
               </h3>
-              <div className="flex items-center gap-3 text-sm">
+              {/* <div className="flex items-center gap-3 text-sm">
                 <img src={logo} className="w-9 h-9 shrink-0 object-contain" />
                 <div>
                   <p className="font-medium text-stone-700 dark:text-stone-300">
@@ -214,7 +214,7 @@ export default function DestinationDetail() {
                     {destination.municipality}
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-3 text-sm">
                 <Calendar className="w-4 h-4 text-stone-400 shrink-0" />
