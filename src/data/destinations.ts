@@ -213,6 +213,33 @@ export const destinations: Destination[] = [
     trending: false,
   },
   
+  {
+    id: 'kweba',
+    name: 'Kweba Falls',
+    category: ['Adventure', 'Hidden Gems'],
+    tagline: 'A hidden cascade surrounded by Sibuyan’s untouched wilderness',
+    description: 'Nestled within the lush landscapes of Sibuyan Island, Kweba Falls is a serene natural attraction known for its refreshing waters, scenic rock formations, and peaceful forest surroundings. Hidden away from crowded tourist spots, the falls offer visitors a quiet escape where nature, adventure, and relaxation come together in one of the island’s untouched tropical settings.',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAE1b_nPUuqYvC5rBJRLJ-XAUOKpuTuaszF3WzoH-S6Lo9mD1rJbbEMBecaa2AvyBPRtTxnPam25de7zsErMzCA5DR1MrwmYlXttgt6JRbfh53M4nUrs3ldIB8GmbtgMdao2c3jsT9Ebves=s1360-w1360-h1020-rw',
+    gallery: [
+      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxDwRz9onTCcsJRuQfLiNCwOyM0y7WKqe0iUFkpYZk1GePBfewUpWQegccU9OHQPtnmVoSSQKrnc7gaENl8eblRChzTgGsJIqh8Q5exMpvLwvU3FbLDp-qxYSL8EvFYyqRU6GL7Ch_0DZ-=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAE1b_nPUuqYvC5rBJRLJ-XAUOKpuTuaszF3WzoH-S6Lo9mD1rJbbEMBecaa2AvyBPRtTxnPam25de7zsErMzCA5DR1MrwmYlXttgt6JRbfh53M4nUrs3ldIB8GmbtgMdao2c3jsT9Ebves=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHDDuSoCrUpw7PlZmFW-Nysv2_w-S-Rw9KSdnC5WhiGE0bV7Tf1rBkoTqA0CbgZZ5NCH87tgnKA4NvZYnaQ9rhO5XZrl9PoGr93WpGomPAiujwhBAq8a7zgSzgwMcgxErf9jvoIzypsiszn=s1360-w1360-h1020-rw',
+    ],
+    rating: 5.0,
+    municipality: 'San Fernando',
+    bestTime: 'As long as the weather is clear',
+    activities: ['Eating'],
+    quickFacts: [
+      { label: 'Language', value: 'Italian' },
+      { label: 'Currency', value: 'Euro (€)' },
+      { label: 'Climate', value: 'Mediterranean' },
+      { label: 'UNESCO', value: 'Since 1997' },
+    ],
+    googleMapsUrl:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16498.912791750685!2d122.52697376321376!3d12.391513586764525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a45d8209a3e921%3A0xcefbeefd3121b981!2sKweba%20falls!5e0!3m2!1sen!2sph!4v1779986614320!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade',
+    featured: false,
+    trending: false,
+  },
+  
 ];
 
 export const categories = [
@@ -222,7 +249,7 @@ export const categories = [
   { id: 'Nature', label: 'Nature & Parks', color: 'from-green-600 to-emerald-400', image: 'https://www.journeyera.com/wp-content/uploads/2018/06/CANTINGAS-RIVER-ROMBLON-02403.jpg' },
   { id: 'Culture', label: 'Culture', image: 'https://jontotheworld.com/wp-content/uploads/2025/09/Biniray-Festival-1180x786.jpg' },
   { id: 'Food', label: 'Foods', image: 'https://i0.wp.com/c5.staticflickr.com/9/8364/28932159572_003ec7fd4d_b.jpg?resize=1024%2C577&quality=89&ssl=1' },
-  { id: 'Adventure', label: 'Adventure', color: 'from-orange-600 to-red-400', image: ''},
-  { id: 'Hidden Gems', label: 'Hidden Gems', color: 'from-teal-500 to-cyan-400', image: '' },
+  { id: 'Adventure', label: 'Adventure', color: 'from-orange-600 to-red-400', image: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Guiting-guiting_3.jpg'},
+  { id: 'Hidden Gems', label: 'Hidden Gems', color: 'from-teal-500 to-cyan-400', image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAE1b_nPUuqYvC5rBJRLJ-XAUOKpuTuaszF3WzoH-S6Lo9mD1rJbbEMBecaa2AvyBPRtTxnPam25de7zsErMzCA5DR1MrwmYlXttgt6JRbfh53M4nUrs3ldIB8GmbtgMdao2c3jsT9Ebves=s1360-w1360-h1020-rw' },
 ];
 
