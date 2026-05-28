@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Compass, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useTravel } from "../../context/TravelContext";
 
 export default function WelcomeModal() {
@@ -51,9 +51,9 @@ export default function WelcomeModal() {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white dark:to-stone-900" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <div className="w-14 h-14 bg-white dark:bg-stone-900 rounded-2xl flex items-center justify-center shadow-xl">
-                  <Compass
+                  <img
+                    src="https://cdn-icons-png.freepik.com/256/1206/1206986.png?semt=ais_white_label"
                     className="w-7 h-7 text-stone-800 dark:text-white"
-                    strokeWidth={1.5}
                   />
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function WelcomeModal() {
                     className="text-center"
                   >
                     <h2 className="font-display text-2xl font-bold text-stone-900 dark:text-white mb-2">
-                      Welcome to Sibuyan
+                      Welcome to I Love Sibuyan
                     </h2>
                     <p className="text-stone-500 dark:text-stone-400 text-sm mb-6">
                       Your personal travel companion. Save destinations, build

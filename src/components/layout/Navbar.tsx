@@ -1,16 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Search,
-  Moon,
-  Sun,
-  Heart,
-  MapPin,
-  Menu,
-  X,
-  Compass,
-} from "lucide-react";
+import { Search, Moon, Sun, Heart, MapPin, Menu, X } from "lucide-react";
 import { useTravel } from "../../context/TravelContext";
 
 const navLinks = [
@@ -61,7 +52,12 @@ export default function Navbar() {
             to="/"
             className={`flex items-center gap-2 font-display font-bold text-xl tracking-tight ${!scrolled && isHome ? "text-white" : "text-stone-900 dark:text-white"}`}
           >
-            <Compass className="w-6 h-6" strokeWidth={1.5} />I love Sibuyan
+            I{" "}
+            <img
+              src="https://cdn-icons-png.freepik.com/256/1206/1206986.png?semt=ais_white_label"
+              className="w-5 h-5"
+            />{" "}
+            Sibuyan
           </Link>
 
           {/* Desktop nav */}
