@@ -61,7 +61,6 @@ export default function Categories() {
 
                   <div className="absolute bottom-0 left-0 right-0 p-6 flex items-end justify-between">
                     <div>
-                      <p className="text-4xl mb-2">{cat.icon}</p>
                       <h2 className="font-display text-2xl font-bold text-white mb-1">
                         {cat.label}
                       </h2>

@@ -11,7 +11,7 @@ import {
   Check,
   Share2,
 } from "lucide-react";
-import { destinations, MUNICIPALITY_LOGOS } from "../data/destinations";
+import { destinations /* MUNICIPALITY_LOGOS */ } from "../data/destinations";
 import { useTravel } from "../context/TravelContext";
 import DestinationCard from "../components/ui/DestinationCard";
 
@@ -51,7 +51,7 @@ export default function DestinationDetail() {
     )
     .slice(0, 3);
 
-  const logo = MUNICIPALITY_LOGOS[destination.municipality];
+  /* const logo = MUNICIPALITY_LOGOS[destination.municipality]; */
 
   return (
     <div className="page-enter min-h-screen">

@@ -1,14 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
-import {
-  ArrowRight,
-  ChevronDown,
-  Star,
-  TrendingUp,
-  Sparkles,
-  Globe,
-} from "lucide-react";
+import { ArrowRight, Star, TrendingUp, Sparkles, Globe } from "lucide-react";
 import { useTravel } from "../context/TravelContext";
 import { destinations, categories } from "../data/destinations";
 import DestinationCard from "../components/ui/DestinationCard";
