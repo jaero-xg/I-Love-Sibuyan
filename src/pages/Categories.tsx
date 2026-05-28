@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { categories, destinations } from "../data/destinations";
+import { categories, destinations, type Category } from "../data/destinations";
 
 export default function Categories() {
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function Categories() {
         >
           <p className="label-sm mb-3">What moves you</p>
           <h1 className="heading-xl text-stone-900 dark:text-white mb-4">
-            Travel
+            Explore
             <br />
             <em className="font-normal italic text-stone-400">Categories</em>
           </h1>
@@ -32,11 +32,11 @@ export default function Categories() {
       <div className="px-6 pb-24 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {categories.map((cat, i) => {
-            const count = destinations.filter(
-              (d) => d.category === cat.id,
+            const count = destinations.filter((d) =>
+              d.category.includes(cat.id as Category),
             ).length;
             const sample = destinations
-              .filter((d) => d.category === cat.id)
+              .filter((d) => d.category.includes(cat.id as Category))
               .slice(0, 3);
 
             return (

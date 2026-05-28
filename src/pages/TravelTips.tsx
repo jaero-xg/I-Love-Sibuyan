@@ -118,13 +118,13 @@ export default function TravelTips() {
           >
             <p className="label-sm mb-3">Expert advice</p>
             <h1 className="heading-xl text-stone-900 dark:text-white mb-4">
-              Travel
+              Traveler’s
               <br />
-              <em className="font-normal italic text-stone-400">Smarter</em>
+              <em className="font-normal italic text-stone-400">Guide</em>
             </h1>
             <p className="text-stone-500 dark:text-stone-400 max-w-xl text-lg">
-              Essential tips and insights to make every journey safer, smoother,
-              and more memorable.
+              Essential travel insights and practical guidance to help make
+              every journey safer, smoother, and more memorable.
             </p>
           </motion.div>
         </div>
@@ -191,7 +191,7 @@ export default function TravelTips() {
                 href="/explore"
                 className="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-stone-900 font-medium rounded-full hover:bg-stone-100 transition-colors"
               >
-                Browse Destinations
+                Explore Sibuyan
               </a>
             </div>
           </div>

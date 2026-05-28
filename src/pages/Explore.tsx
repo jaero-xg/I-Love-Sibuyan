@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Search, X, SlidersHorizontal } from "lucide-react";
-import { destinations, categories } from "../data/destinations";
+import { destinations, type Category, categories } from "../data/destinations";
 import DestinationCard from "../components/ui/DestinationCard";
 
 export default function Explore() {
@@ -25,7 +25,8 @@ export default function Explore() {
         d.name.toLowerCase().includes(query.toLowerCase()) ||
         d.tagline.toLowerCase().includes(query.toLowerCase());
       const matchCat =
-        activeCategory === "All" || d.category === activeCategory;
+        activeCategory === "All" ||
+        d.category.includes(activeCategory as Category);
       return matchQuery && matchCat;
     });
   }, [query, activeCategory, activeRegion]);
@@ -51,7 +52,7 @@ export default function Explore() {
           <h1 className="heading-xl text-stone-900 dark:text-white mb-8">
             Explore
             <br />
-            <em className="font-normal italic text-stone-400">Destinations</em>
+            <em className="font-normal italic text-stone-400">Sibuyan</em>
           </h1>
         </motion.div>
 
@@ -67,7 +68,7 @@ export default function Explore() {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search destinations, countries..."
+            placeholder="Search experiences, foods..."
             className="w-full pl-11 pr-4 py-4 bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-2xl text-stone-900 dark:text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900 dark:focus:ring-stone-400 text-sm shadow-sm"
           />
           {query && (
@@ -100,7 +101,7 @@ export default function Explore() {
                 onClick={() => setActiveCategory(cat)}
                 className={`shrink-0 px-4 py-1.5 rounded-full text-xs font-medium transition-colors ${activeCategory === cat ? "bg-stone-900 dark:bg-white text-white dark:text-stone-900" : "bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 hover:border-stone-400 dark:hover:border-stone-500"}`}
               >
-                {cat === "All" ? "All Destinations" : cat}
+                {cat === "All" ? "All Experiences" : cat}
               </button>
             ))}
 
@@ -120,7 +121,7 @@ export default function Explore() {
       <div className="px-6 py-10 max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-6">
           <p className="text-sm text-stone-500 dark:text-stone-400">
-            {filtered.length} destination{filtered.length !== 1 ? "s" : ""}
+            {filtered.length} Curated Pick{filtered.length !== 1 ? "s" : ""}
             {activeCategory !== "All" && ` in ${activeCategory}`}
             {activeRegion !== "All" && ` · ${activeRegion}`}
           </p>
@@ -136,7 +137,7 @@ export default function Explore() {
           <div className="text-center py-24">
             <p className="text-6xl mb-4">🌍</p>
             <h3 className="font-display text-2xl font-semibold text-stone-700 dark:text-stone-300 mb-2">
-              No destinations found
+              No Experiences found
             </h3>
             <p className="text-stone-400 text-sm mb-6">
               Try adjusting your search or filters

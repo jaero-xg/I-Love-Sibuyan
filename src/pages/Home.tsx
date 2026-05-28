@@ -95,8 +95,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
           >
-            Discover extraordinary places, curate your dream itinerary, and
-            create memories that last a lifetime.
+            Discover breathtaking destinations, experience local culture, and
+            create unforgettable memories across the island paradise of Sibuyan.
           </motion.p>
           <motion.div
             className="flex items-center justify-center gap-4"
@@ -108,14 +108,14 @@ export default function Home() {
               to="/explore"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-stone-900 font-medium rounded-full hover:bg-stone-100 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
             >
-              Explore Destinations
+              Explore
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               to="/categories"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 text-white border border-white/20 rounded-full hover:bg-white/20 backdrop-blur-sm transition-all duration-300"
             >
-              Browse Categories
+              Categories
             </Link>
           </motion.div>
         </motion.div>
@@ -141,8 +141,8 @@ export default function Home() {
         >
           <div className="bg-white/10 backdrop-blur-md border-t border-white/10 px-10 py-4 flex items-center gap-10 md:gap-16">
             {[
-              { value: "100+", label: "Destinations" },
-              { value: "7", label: "Categories" },
+              { value: "100+", label: "Experiences" },
+              { value: "8", label: "Categories" },
               { value: "∞", label: "Adventures" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
@@ -167,7 +167,7 @@ export default function Home() {
               Featured
               <br />
               <em className="font-normal italic text-stone-400">
-                Destinations
+                Experiences{" "}
               </em>
             </h2>
           </div>
@@ -227,9 +227,6 @@ export default function Home() {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <span className="absolute bottom-2 left-0 right-0 text-center text-xl">
-                      {cat.icon}
-                    </span>
                   </div>
                   <p className="text-center text-xs font-medium text-stone-600 dark:text-stone-400 group-hover:text-stone-900 dark:group-hover:text-white transition-colors">
                     {cat.label}

@@ -100,7 +100,7 @@ export default function DestinationCard({
       <Link to={`/destination/${destination.id}`} className="block p-4">
         <div className="flex items-start justify-between mb-1">
           <div>
-            <p className="label-sm mb-1">{destination.category}</p>
+            <p className="label-sm mb-2">{destination.category.join(" · ")}</p>
             <h3 className="font-display text-lg font-semibold text-stone-900 dark:text-white leading-tight">
               {destination.name}
             </h3>

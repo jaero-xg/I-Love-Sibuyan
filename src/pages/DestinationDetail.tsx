@@ -10,7 +10,6 @@ import {
   ChevronLeft,
   Check,
   Share2,
-  Landmark,
 } from "lucide-react";
 import { destinations, MUNICIPALITY_LOGOS } from "../data/destinations";
 import { useTravel } from "../context/TravelContext";
@@ -46,7 +45,9 @@ export default function DestinationDetail() {
 
   const nearby = destinations
     .filter(
-      (d) => d.category === destination.category && d.id !== destination.id,
+      (d) =>
+        d.id !== destination.id &&
+        d.category.some((c) => destination.category.includes(c)),
     )
     .slice(0, 3);
 
@@ -121,7 +122,9 @@ export default function DestinationDetail() {
             <div>
               <div className="flex items-start justify-between flex-wrap gap-4">
                 <div>
-                  <p className="label-sm mb-2">{destination.category}</p>
+                  <p className="label-sm mb-2">
+                    {destination.category.join(" · ")}
+                  </p>
                   <h1 className="font-display text-5xl md:text-6xl font-bold text-stone-900 dark:text-white mb-1">
                     {destination.name}
                   </h1>
@@ -199,17 +202,10 @@ export default function DestinationDetail() {
             {/* Quick info card */}
             <div className="bg-white dark:bg-stone-800 rounded-2xl border border-stone-100 dark:border-stone-700 p-6 space-y-4">
               <h3 className="font-display text-lg font-semibold text-stone-900 dark:text-white">
-                Trip Info
+                Overview
               </h3>
-              <div className="flex items-center text-sm">
-                <div className="w-full h-auto rounded-2xl overflow-hidden">
-                  <img src={logo} className="w-full h-full object-cover" />
-                </div>
-              </div>
-
               <div className="flex items-center gap-3 text-sm">
-                <Landmark className="w-4 h-4 text-stone-400 shrink-0" />
-
+                <img src={logo} className="w-9 h-9 shrink-0 object-contain" />
                 <div>
                   <p className="font-medium text-stone-700 dark:text-stone-300">
                     Municipality
@@ -224,7 +220,7 @@ export default function DestinationDetail() {
                 <Calendar className="w-4 h-4 text-stone-400 shrink-0" />
                 <div>
                   <p className="font-medium text-stone-700 dark:text-stone-300">
-                    Best time to visit
+                    Best time to experience
                   </p>
                   <p className="text-stone-500 dark:text-stone-400">
                     {destination.bestTime}
